@@ -1,4 +1,4 @@
-#require "pry"
+require "pry"
 
 def begins_with_r(array)
   array.each do |item|
@@ -80,6 +80,7 @@ end
 def organize_schools(schools)
   output = {}
   schools.each do |school, school_data|
+    binding.pry
     output[school_data[:location]] = []
   end
   schools.each do |school, school_data|
